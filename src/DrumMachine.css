@@ -1,0 +1,58 @@
+:root{
+
+    --componentBackground: #91C8E4;
+    --border: #4682A9;
+    --buttons: #F6F4EB;
+}
+
+#drum-machine{
+    width: 35vw;
+    height: 30vh;
+    padding: 20px;
+    background-color: var(--componentBackground);
+    border: 5px solid var(--border);
+    display: flex;
+    align-items: center;
+}
+
+.drums{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.drum-pad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: var(--buttons);
+    -webkit-box-shadow: 6px 8px 5px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 6px 8px 5px 0px rgba(0,0,0,0.39);
+    box-shadow: 6px 8px 5px 0px rgba(0,0,0,0.39);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.functions{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#author{
+    font-size: 20px;
+    font-weight: bold;
+}
+#display{
+    background-color: var(--buttons);
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
